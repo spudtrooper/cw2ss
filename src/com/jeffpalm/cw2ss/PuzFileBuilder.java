@@ -62,7 +62,7 @@ final class PuzFileBuilder {
         format.setVerticalAlignment(VerticalAlignment.TOP);
         format.setShrinkToFit(true);
         format.setBackground(colour);
-        format.setBorder(Border.ALL, BorderLineStyle.THIN);
+        format.setBorder(jxl.format.Border.ALL, BorderLineStyle.THIN);
         Label lab = new Label(startRow + row, startCol + col, str, format);
         sheet.addCell(lab);
       }
